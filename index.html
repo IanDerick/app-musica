@@ -8,49 +8,62 @@
 </head>
 <body>
   <header>
-    <h1>🎵 MusicApp</h1>
-    <input type="text" placeholder="Buscar músicas, artistas...">
+    <h1>MusicApp</h1>
+    <input id="search" type="text" placeholder="Buscar músicas, artistas...">
   </header>
-
   <div class="grid">
     <div class="section">
-      <h2>Artistas</h2>
-      <div class="card">Artista 1</div>
-      <div class="card">Artista 2</div>
-      <div class="card">Artista 3</div>
+      <h2>Artistas mais tocados</h2>
+      <div class="card">Drake</div>
+      <div class="card">Clara la San</div>
+      <div class="card">PartyNextDoor</div>
+      <div class="card">Charlie Brown Jr.</div>
+      <div class="card">Puma PJL</div>
     </div>
-
     <div class="section">
       <h2>Álbuns</h2>
-      <div class="card">Álbum A</div>
-      <div class="card">Álbum B</div>
-      <div class="card">Álbum C</div>
+      <div class="card">Certified Lover Boy</div>
+      <div class="card">Dark lane demo tape</div>
+      <div class="card">More Life</div>
+      <div class="card">Atroworld</div>
+      <div class="card">4 Your Eyez Only</div>
+      <div class="card">Goog Mourning</div>
     </div>
-
     <div class="section">
       <h2>Músicas</h2>
-      <div class="card">Música X</div>
-      <div class="card">Música Y</div>
-      <div class="card">Música Z</div>
+      <div class="card">Fucking Fans</div>
+      <div class="card">Chicago Freestyle</div>
+      <div class="card">Teenage Fever</div>
+      <div class="card">Astrothunder</div>
+      <div class="card">Neighbors</div>
+      <div class="card">Unplanned</div>
     </div>
 
     <div class="section">
       <h2>Playlists</h2>
-      <div class="card">Playlist 1</div>
-      <div class="card">Playlist 2</div>
+      <div class="card">fvck</div>
+      <div class="card">fake luv</div>
+      <div class="card">yeey</div>
+      <div class="card">away</div>
     </div>
   </div>
 
   <div class="player">
     <div>
-      <span id="current-track">Música Atual - Artista</span>
-      <button onclick="togglePlay()" id="play-button">▶️</button>
+      <legend id="titulo-musica">Teenage Fever</legend>
+      <legend id="cantor-musica">Drake</legend>
     </div>
     <div class="progress">
+      <div class="midia-buttons">
+        <button id="back-button">⏮️</button>
+        <button onclick="togglePlay()" id="play-button">⏸️</button>
+        <button id="next-button">⏭️</button>
+      </div>
         <input type="range" id="auto-range" min="0" max="100">
     </div>
     <div class="volume-control">
-      🔊 <input type="range" min="0" max="100">
+      <button onclick="toggleSound()" id="sound-button">🔊</button>
+      <input type="range" min="0" max="100">
     </div>
   </div>
 
